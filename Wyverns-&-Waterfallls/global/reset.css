@@ -1,0 +1,31 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+}
+
+body {
+   font-size: 100%;
+   list-style-type: none;
+}
+
+input,
+select,
+textarea,
+button  {
+   background-color: transparent;
+}
+
+button {
+   cursor: pointer;
+   border: none;
+}
+
+a {
+   color: inherit;
+}
+
+ul {
+   list-style: none;
+}

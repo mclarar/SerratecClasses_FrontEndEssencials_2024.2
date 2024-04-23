@@ -1,0 +1,173 @@
+/* Hero */
+.hero-bg {
+   background-image: url("./assets/imgs/hero-bg.jpeg");
+   background-size: cover;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.backdrop-blur {
+   backdrop-filter: blur(5px);
+   background-color: var(--cor-primaria-50);
+   background-blend-mode: lighten;
+}
+
+.hero-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   gap: 2rem;
+}
+
+.logo-hero-container {
+   flex: 1;
+   display: flex;
+   justify-content: center;
+}
+
+.logo-hero-container > img {
+   width: 100%;
+   min-width: 100px;
+   max-width: 288px;
+}
+
+.hero-container > div {
+   flex: 1;
+   text-align: center;
+}
+
+/* Matérias */
+section > h2 {
+   margin-bottom: 2rem;
+   text-align: center;
+}
+
+.materias-container {
+   width: 100%;
+
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+   gap: 2rem;
+}
+
+.card {
+   flex: 1;
+   max-width: 420px;
+
+   display: flex;
+   flex-direction: column;
+   padding: 1rem;
+   gap: 1.5rem;
+   
+   border-radius: 1.25rem;
+   background-color: var(--cor-primaria-light);
+   box-shadow: 0 0.5rem 0.6rem 0 #00000050;
+}
+
+#card-title{
+   margin-top: -0.5rem;
+   margin-bottom: 1rem;
+}
+
+
+.card > a, .card > a > img,
+.ficha-link-container > a{
+   width: 100%;
+}
+
+.card > a:nth-child(3){
+   width: 100%;
+   text-align: right;
+}
+
+.card > a:hover{
+   color: var(--cor-accent);
+   transition-duration: 1000;
+}
+
+/* Seção Link Ficha */
+.chamada-ficha-bg {
+   background-image: url("./assets/imgs/card-2.jpg");
+   background-size: cover;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-position: top;
+}
+
+.backdrop-blur-alt {
+   background-color: var(--cor-primaria-90);
+}
+
+div[class*="container"]{
+   display: flex;
+   justify-content: center;
+}
+
+.ficha-link-container{
+   margin: auto;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-items: center;
+}
+
+.ficha-link-container > img{
+   width: 8rem;
+   aspect-ratio: auto;
+}
+
+.ficha-link-container:hover{
+   transform: scale(0.95);
+   transition-duration: 500;
+}
+
+/* Elemento com width maior que 640px */
+@media (min-width: 640px) {
+   .hero-container {
+      flex-direction: row-reverse;
+      gap: 0;
+   }
+
+   .hero-container > div {
+      flex: 1;
+      font-size: xx-large;
+      text-align: left;
+   }
+
+   .logo-hero-container {
+      width: 100%;
+      min-width: 288px;
+      justify-content: end;
+   }
+
+   .hero-container > div > p {
+      font-size: 1.5rem;
+   }
+
+   section > h2 {
+      text-align: left;
+   }
+   
+
+   .materias-container {
+      flex-direction: row;
+      align-items: center;
+   }
+
+   .card {
+      padding: 1rem;
+
+      width: 25%;
+      min-width: 288px;
+
+      border-radius: 1.25rem;
+      background-color: var(--cor-primaria-light);
+   }
+}

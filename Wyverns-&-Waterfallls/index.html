@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="/global/reset.css" />
+      <link rel="stylesheet" href="/global/base.css" />
+      <link rel="stylesheet" href="/global/navbar.css" />
+      <link rel="stylesheet" href="/global/footer.css" />
+      <link rel="stylesheet" href="index.css" />
+      <link rel="icon" href="/assets/icons/favicon.svg" />
+      <title>W&W</title>
+   </head>
+   <body>
+      <header id="navbar" class="navbar">
+         <div class="container nav-content">
+            <div class="nav-action">
+               <a href="#hero">
+                  <img id="logo-icon" src="/assets/icons/favicon.svg" />
+                  <h1>Wyverns & Waterfallls<sup><small>&copy;</small></sup></h1>
+               </a>
+               <button type="button" class="menu-button" onclick="toggleCollapsableMenu()">
+                  <img src="assets/icons/menu-icon.svg" alt="Menu colapsável" />
+               </button>
+            </div>
+            <nav id="navbar">
+               <ul class="nav-list">
+                  <li id="nav-sobre" class="nav-item">
+                     <a href="#sobre">Sobre</a>
+                  </li>
+                  <li id="nav-criar_ficha" class="nav-item">
+                     <a href="/pages/ficha-form/ficha-form.html">Criar Ficha</a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <main>
+         <section id="hero" class="hero-bg">
+            <div class="backdrop-blur">
+               <div class="container main-padding hero-container">
+                  <div class="logo-hero-container">
+                     <img src="/assets/imgs/Artificer.png" alt="logo" width="288px" />
+                  </div>
+                  <div>
+                     <h2>Wyverns & Waterfallls</h2>
+                     <br />
+                     <p>
+                        Veja mais de perto esse RPG de fantasia lendário e descubra porque milhões de jogadores ao redor
+                        do mundo têm tomado o lugar de poderosos heróis (e esquivos anti-heróis) para criar suas
+                        próprias histórias.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section id="materias" class="container main-padding">
+            <h2>Artigos</h2>
+            <div class="materias-container">
+               <article id="card-1" class="card">
+                  <a target="_blank" title="link para a matéria" href="https://dnd.wizards.com/pt-BR/what-is-dnd">
+                     <img src="/assets/imgs/card-1.jpg" alt="Pessoas medievais jogando W&W" />
+                  </a>
+                  <div id="card-content">
+                     <h3 id="card-title">O que é Wyverns & Waterfalls?</h3>
+                     <p id="card-text">
+                        Aqui você encontrará orientações e recursos para aprender o jogo e continuar sua jornada. Como
+                        primeiro passo, também recomendamos o Kit Introdutório de W&W, que contém tudo o que você
+                        precisa para jogar Wyverns & Waterfalls!
+                     </p>
+                  </div>
+                  <a target="_blank" title="link para a matéria" href="https://dnd.wizards.com/pt-BR/what-is-dnd"
+                     >Ler mais...</a
+                  >
+               </article>
+               <article id="card-2" class="card">
+                  <a target="_blank" title="link para a matéria" href="https://dnd.wizards.com/pt-BR/how-to-dm">
+                     <img src="/assets/imgs/card-1.jpg" alt="Pessoas medievais jogando W&W" />
+                  </a>
+                  <div id="card-content">
+                     <h3 id="card-title">Como ser um WM?</h3>
+                     <p id="card-text">
+                        Em Wyverns & Waterfalls, uma pessoa atua como Wivern Master (ou “WM”), o principal narrador e
+                        árbitro do jogo. O WM narra a aventura para os jogadores, que atravessam seus perigos e decidem
+                        quais caminhos explorar.
+                     </p>
+                  </div>
+                  <a target="_blank" title="link para a matéria" href="https://dnd.wizards.com/pt-BR/how-to-dm"
+                     >Ler mais...</a
+                  >
+               </article>
+               <article id="card-2" class="card">
+                  <a target="_blank" title="link para a matéria" href="https://dnd.wizards.com/pt-BR/how-to-play">
+                     <img src="/assets/imgs/card-1.jpg" alt="Pessoas medievais jogando W&W" />
+                  </a>
+                  <div id="card-content">
+                     <h3 id="card-title">Como jogar?</h3>
+                     <p id="card-text">
+                        Em W&W, cada jogador cria um personagem heroico para representá-lo no jogo: ele pode ser um
+                        guerreiro habilidoso, um clérigo devoto, um ladino mortal, um mago conjurador ou algo
+                        completamente diferente!
+                     </p>
+                  </div>
+                  <a target="_blank" title="link para a matéria" href="https://dnd.wizards.com/pt-BR/how-to-play"
+                     >Ler mais...</a
+                  >
+               </article>
+            </div>
+         </section>
+         <section id="criar-ficha-link" class="chamada-ficha-bg">
+            <div class="backdrop-blur-alt">
+               <div class="container main-padding">
+                  <a
+                     title="link para página criar-ficha"
+                     class="ficha-link-container"
+                     href="/pages/ficha-form/ficha-form.html">
+                     <img src="/assets/icons/helm-icon.svg" alt="ícone elmo criar ficha" />
+                     <p><strong>Crie sua ficha agora!</strong></p>
+                  </a>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="container">
+         <section id="footer-section-left" class="footer-logo-container">
+            <a href="#hero">
+               <img id="logo-footer-icon" src="/assets/icons/favicon.svg" />
+               <h2>Wyverns & Waterfallls<sup><small>&copy;</small></sup></h2>
+            </a>
+         </section>
+         <section id="footer-section-right">
+            <h2>Navegação</h2>
+            <ul>
+               <li id="nav-sobre" class="nav-item">
+                  <a href="#sobre">Sobre</a>
+               </li>
+               <li id="nav-criar_ficha" class="nav-item">
+                  <a href="/pages/ficha-form/ficha-form.html">Criar Ficha</a>
+               </li>
+            </ul>
+         </section>
+      </footer>
+
+      <script>
+         function toggleCollapsableMenu() {
+            const nav = document.querySelector(".nav-list");
+            nav.classList.toggle("show-nav-list");
+         }
+      </script>
+   </body>
+</html>

@@ -1,0 +1,36 @@
+.form-border {
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 3px solid var(--cor-primaria);
+    border-radius: 1rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 1.25rem;
+    gap: 1rem;
+}
+
+form > section {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    flex: 1;
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    form > section {
+        display: inline;
+        max-width: 400px;
+    }
+}

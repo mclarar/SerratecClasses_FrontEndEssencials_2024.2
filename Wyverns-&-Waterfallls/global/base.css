@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+:root {
+   --cor-primaria: #320000;
+   --cor-primaria-light: #512626;
+   --cor-primaria-90: #32000090;
+   --cor-primaria-50: #32000050;
+
+   --cor-accent: #0f74bc;
+   --cor-background: #050510;
+}
+
+body {
+   width: 100%;
+   min-height: 100vh;
+
+   color-scheme: dark;
+   background-color: var(--cor-background);
+
+   color: white;
+   font-family: "Quicksand", sans-serif;
+
+   scroll-behavior: smooth;
+}
+input, select, textarea {
+   padding: 3%;
+   padding-right: 0.2rem;
+   
+   border-radius: 0.5rem;
+   border: 1px white solid;
+   box-shadow: 0 0.5rem 0.6rem 0 #00000050 inset;
+}
+
+button{
+   padding: 3%;
+   background-color: var(--cor-primaria);
+   border-radius: 0.5rem;
+   text-align: center;
+}
+
+.container {
+   margin-left: auto;
+   margin-right: auto;
+
+   width: 100%;
+}
+
+.main-padding {
+   min-height: 24rem;
+
+   padding: 0.867rem;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+}
+
+/* Elemento com width maior que 640px */
+@media (min-width: 640px) {
+   .container {
+      max-width: 640px;
+   }
+
+   .main-padding {
+      padding: 5%;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+   }
+}
+
+/* Elemento com width maior que 768px */
+@media (min-width: 768px) {
+   .container {
+      max-width: 768px;
+   }
+}
+
+/* Elemento com width maior que 1024px */
+@media (min-width: 1024px) {
+   .container {
+      max-width: 1024px;
+   }
+}
+
+/* Elemento com width maior que 1280px */
+@media (min-width: 1280px) {
+   .container {
+      max-width: 1280px;
+   }
+}
+
+@media (min-width: 1360px) {
+   .container {
+      max-width: 1360px;
+   }
+}

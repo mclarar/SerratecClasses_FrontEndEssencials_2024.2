@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" href="/assets/icons/favicon.svg" />
+      <link rel="stylesheet" href="/global/reset.css" />
+      <link rel="stylesheet" href="/global/base.css" />
+      <link rel="stylesheet" href="/global/navbar.css" />
+      <link rel="stylesheet" href="/global/footer.css" />
+      <link rel="stylesheet" href="ficha-form.css" />
+      <title>W&W - Ficha</title>
+   </head>
+   <body>
+      <header id="navbar" class="navbar">
+         <div class="container nav-content">
+            <div class="nav-action">
+               <a href="../../index.html#hero">
+                  <img id="logo-icon" src="/assets/icons/favicon.svg" />
+                  <h1>
+                     Wyverns & Waterfallls<sup><small>&copy;</small></sup>
+                  </h1>
+               </a>
+               <button type="button" class="menu-button" onclick="toggleCollapsableMenu()">
+                  <img src="/assets/icons/menu-icon.svg" alt="Menu colapsável" />
+               </button>
+            </div>
+            <nav id="navbar">
+               <ul class="nav-list">
+                  <li id="nav-sobre" class="nav-item">
+                     <a href="/index.html">Sobre</a>
+                  </li>
+                  <li id="nav-criar_ficha" class="nav-item">
+                     <a href="/pages/ficha-form/ficha-form.html">Criar Ficha</a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <main class="container main-padding">
+         <div class="form-border">
+            <form class="form" onsubmit="handleSubmit(event)">
+               <section id="name-section">
+                  <label for="nome">Nome: </label>
+                  <input type="text" name="nome" id="nome" required />
+               </section>
+               <section id="genero-section">
+                  <label for="genero">Gênero: </label>
+                  <div>
+                     <input type="radio" name="genero" id="feminino" value="f" required />
+                     Feminino
+                     <input type="radio" name="genero" id="masculino" value="m" required />
+                     Masculino
+                     <input type="radio" name="genero" id="nao-binario" value="n" required />
+                     Não obrigado
+                  </div>
+               </section>
+               <section id="race-section">
+                  <label for="raca">Raça: </label>
+                  <select name="raca" id="raca" required>
+                     <optgroup label="Anões">
+                        <option value="anao-da-colina">Anão da Colina</option>
+                        <option value="anao-da-montanha">Anão da Montanha</option>
+                     </optgroup>
+                     <optgroup label="Elfos">
+                        <option value="alto-elfo">Alto Elfo</option>
+                        <option value="elfo-da-floresta">Elfo da Floresta</option>
+                        <option value="elfo-negro">Elfo Negro</option>
+                        <option value="meio-elfo">Meio-Elfo</option>
+                     </optgroup>
+                     <optgroup label="Halflings (Hobbits)">
+                        <option value="halfling-pes-leves">Halfling Pés Leves</option>
+                        <option value="halfling-robusto">Halfling Robusto</option>
+                     </optgroup>
+                     <optgroup label="Humanos">
+                        <option value="humano-padrao">Humano Padrão</option>
+                        <option value="humano-variante">Humano Variante</option>
+                     </optgroup>
+                     <optgroup label="Draconatos">
+                        <option value="draconato-azul">Draconato Azul</option>
+                        <option value="draconato-branco">Draconato Branco</option>
+                        <option value="draconato-bronze">Draconato Bronze</option>
+                        <option value="draconato-cobre">Draconato Cobre</option>
+                        <option value="draconato-latão">Draconato Latão</option>
+                        <option value="draconato-negro">Draconato Negro</option>
+                        <option value="draconato-ouro">Draconato Ouro</option>
+                        <option value="draconato-prata">Draconato Prata</option>
+                        <option value="draconato-verde">Draconato Verde</option>
+                        <option value="draconato-vermelho">Draconato Vermelho</option>
+                     </optgroup>
+                     <optgroup label="Gnomos">
+                        <option value="gnomo-da-floresta">Gnomo da Floresta</option>
+                        <option value="gnomo-das-rochas">Gnomo das Rochas</option>
+                     </optgroup>
+                     <option value="meio-orc">Meio-Orc</option>
+                     <optgroup label="Tieflings">
+                        <option value="tiefling-infernal">Tiefling Infernal</option>
+                        <option value="tiefling-bbissal">Tiefling Abissal</option>
+                     </optgroup>
+                  </select>
+                  <button title="Escolher aleatório" type="button" onclick="racaAleatoria()">
+                     <img src="/assets/icons/d20-icon.png" alt="ícone D20 - randomizar classe">
+                  </button>
+               </section>
+               <section id="class-section">
+                  <label for="classe">Classe: </label>
+                  <select name="classe" id="classe" required>
+                     <option value="artificer">Artificer</option>
+                     <option value="bárbaro">Bárbaro</option>
+                     <option value="bardo">Bardo</option>
+                     <option value="bruxo">Bruxo</option>
+                     <option value="clérigo">Clérigo</option>
+                     <option value="druida">Druida</option>
+                     <option value="feiticeiro">Feiticeiro</option>
+                     <option value="guerreiro">Guerreiro</option>
+                     <option value="ladino">Ladino</option>
+                     <option value="mago">Mago</option>
+                     <option value="monge">Monge</option>
+                     <option value="paladino">Paladino</option>
+                     <option value="patrulheiro">Patrulheiro</option>
+                  </select>
+                  <button title="Escolher aleatório" type="button" onclick="classeAleatoria()">
+                     <img src="/assets/icons/d20-icon.png" alt="ícone D20 - randomizar classe">
+                  </button>
+               </section>
+               <section id="historia-section">
+                  <label for="historia">História: </label>
+                  <textarea id="historia" name="historia" minlength="5"></textarea>
+               </section>
+               <section id="action-section">
+                  <button type="submit">Criar Ficha</button>
+               </section>
+            </form>
+         </div>
+      </main>
+      <footer class="container">
+         <section id="footer-section-left" class="footer-logo-container">
+            <a href="#hero">
+               <img id="logo-footer-icon" src="/assets/icons/favicon.svg" />
+               <h2>
+                  Wyverns & Waterfallls<sup><small>&copy;</small></sup>
+               </h2>
+            </a>
+         </section>
+         <section id="footer-section-right">
+            <h2>Navegação</h2>
+            <ul>
+               <li id="nav-sobre" class="nav-item">
+                  <a href="#sobre">Sobre</a>
+               </li>
+               <li id="nav-criar_ficha" class="nav-item">
+                  <a href="/pages/ficha-form/ficha-form.html">Criar Ficha</a>
+               </li>
+            </ul>
+         </section>
+      </footer>
+      <script src="./ficha-form.js"></script>
+   </body>
+</html>
