@@ -76,7 +76,7 @@
 }
 .divaldo{
     display: flex;
-    /* background-color: darkmagenta; */
+    background-color: darkmagenta;
     width: 80%;
     gap: 12px;
     justify-content: center;
@@ -93,4 +93,6 @@
 #batata{
     background-color: red;
 }
+
+
 
