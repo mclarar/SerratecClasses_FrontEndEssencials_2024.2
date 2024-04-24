@@ -1,0 +1,96 @@
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.display_block{
+    background-color: blueviolet;
+    width: 100px;
+    height: 100px;
+
+}
+
+.display_inline{
+    background-color: aqua;
+    width: 250px;
+    height: 100px;
+}
+
+.display_inline_block{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
+
+.inline_block{
+    background-color: blue;
+}
+
+.container_pai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_container{
+    background-color: chocolate;
+    /* outro tipo de display para organizar os elementos em tela */
+    display: flex;
+    /* unidade de medida: % refere-se ao elemento pai */
+    width: 50%;
+
+
+    /* direção desses elementos, podendo ser em linha ou coluna */
+    flex-direction: row; 
+    /* propriedade pertencente ao display flex, que dá espaçamento entre os elementos */
+    gap: 20px;
+
+    /* centraliza o elemento */
+    /* justify-content: center;
+    align-items: center; */
+    flex-wrap: wrap-reverse;
+}
+
+.display_flex{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ariovaldo{
+    display: flex;
+    background-color: pink;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+}
+.divaldo{
+    display: flex;
+    /* background-color: darkmagenta; */
+    width: 80%;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mariaClara{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+}
+
+#batata{
+    background-color: red;
+}
+
