@@ -12,25 +12,34 @@
       <p>Preencha os campos com suas informações</p>
     </div>
     <form>
-      <fieldset>
-        <label>Nome</label>
-        <input type="text" />
-
-        <label>Sobrenome</label>
-        <input type="text" />
-
-        <label>email</label>
-        <input type="email" />
+      <fieldset class="campo_informacoes_pessoais">
+        <div class="box_input">
+          <label class="label_input_informacoes">Nome</label>
+          <input type="text" placeholder="Nome" />
+        </div>
+        <div class="box_input">
+          <label>Sobrenome</label>
+          <input type="text" placeholder="Sobrenome" />
+        </div>
+        <div class="box_input">
+          <label>Email</label>
+          <input type="email" placeholder="E-mail" />
+        </div>
       </fieldset>
 
       <div class="stack">
         <label>Em qual lado da aplicação você gosta de trabalhar?</label>
-        <input type="radio" value="frontend" name="stack" />
-        <label for="stack">front-end</label>
-        <input type="radio" value="backend" name="stack" required />
-        <label for="stack">back-end</label>
-        <input type="radio" value="fullStack" name="stack" required />
-        <label for="stack">fullStack</label>
+        <br />
+        <label for="stack">
+          <input type="radio" value="frontend" name="stack" /> front-end
+        </label>
+        <label for="stack">
+          <input type="radio" value="backend" name="stack" required /> back-end
+        </label>
+        <label for="stack">
+          <input type="radio" value="fullStack" name="stack" required />
+          fullStack
+        </label>
       </div>
       <div class="campo_senioridade">
         <label> Senioridade</label>
@@ -43,24 +52,73 @@
       </div>
       <div class="checkbox">
         <label> Selecione as tecnologias que vc gosta de trabalhar</label>
-        <input type="checkbox" id="tecnologia" name="tecnologia1" value="html">
-        <label for="tecnologia1">HTML</label>
-        <input type="checkbox" id="tecnologia" name="tecnologia2" value="CSS">
-        <label for="tecnologia2">CSS</label>
-        <input type="checkbox" id="tecnologia" name="tecnologia3" value="JavaScript">
-        <label for="tecnologia3">JavaScript</label>
-        <input type="checkbox" id="tecnologia" name="tecnologia4" value="Java">
-        <label for="tecnologia4">Java</label>
-        <input type="checkbox" id="tecnologia" name="tecnologia5" value="Python">
-        <label for="tecnologia5">Python</label>
+        <label for="tecnologia1">
+          <input
+            type="checkbox"
+            id="tecnologia"
+            name="tecnologia1"
+            value="html"
+          />
+
+          HTML
+        </label>
+        <label for="tecnologia2">
+          <input
+            type="checkbox"
+            id="tecnologia"
+            name="tecnologia2"
+            value="CSS"
+          />
+
+          CSS</label
+        >
+
+        <label for="tecnologia3">
+          <input
+            type="checkbox"
+            id="tecnologia"
+            name="tecnologia3"
+            value="JavaScript"
+          />
+          JavaScript</label
+        >
+
+        <label for="tecnologia4">
+          <input
+            type="checkbox"
+            id="tecnologia"
+            name="tecnologia4"
+            value="Java"
+          />
+          Java</label
+        >
+
+        <label for="tecnologia5">
+          <input
+            type="checkbox"
+            id="tecnologia"
+            name="tecnologia5"
+            value="Python"
+          />
+
+          Python</label
+        >
       </div>
 
       <div class="area_de_texto">
         <label>Conte um pouco da sua experência</label>
-        <textarea name="experencia" id="experencia" cols="30" rows="10" required >
+        <textarea
+          name="experencia"
+          id="experencia"
+          cols="30"
+          rows="10"
+          required
+        >
         </textarea>
       </div>
-      <button type="submit">enviar</button>
+      <div class="container_botao">
+        <button type="submit">enviar</button>
+      </div>
     </form>
   </body>
 </html>

@@ -1,0 +1,99 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.titulo_pagina {
+    /* background-color: aqua; */
+    font-size: 2rem;
+    text-align: center;
+}
+
+.titulo_pagina p {
+    font-size: 1.5rem;
+}
+
+
+form {
+    width: 55%;
+    background-color: #f0f8ff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.campo_informacoes_pessoais {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: flex-start;
+    gap: 0.8rem;
+    border-radius: 5px;
+}
+
+.box_input{
+    display: flex;
+    flex-direction: column;
+}
+
+.campo_informacoes_pessoais input[type="text"],
+input[type="email"] {
+    width: 35rem;
+    height: 1rem;
+
+}
+
+
+.stack {
+    /* background-color: #e5e097; */
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.campo_senioridade {
+    /* background-color: bisque; */
+    padding: 1rem;
+}
+
+.checkbox {
+    /* background-color: #8a8adb; */
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.area_de_texto {
+    /* background-color: #d5a17c; */
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0.8rem;
+
+}
+
+.container_botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.container_botao button {
+    width: 10rem;
+    height: 3rem;
+    background-color: #8a8adb;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #646494 ;
+    font-weight: bold;
+}
