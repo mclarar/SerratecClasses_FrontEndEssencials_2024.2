@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #1f1d1d;
+}
+
+.navbar{
+    background-color: cadetblue;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem;
+}
+
+ul{
+    display: flex;
+    gap: 1rem;
+}
+
+li{
+    list-style: none;
+}
+
+.container-imagem{
+   padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.container-imagem img{
+    border-radius: 8px;
+}
+
+/* largura - width,
+padding - espaçamento de dentro do elemento,
+margin - espaçamento pra fora do elemento,
+gap - propriedade do display flex, que espaça elementos dentro de uma div,  */

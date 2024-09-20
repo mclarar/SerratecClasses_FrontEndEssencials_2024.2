@@ -1,0 +1,34 @@
+body{
+    background-color: #f2dede;
+  
+}
+
+h1{
+    text-align: center;
+}
+
+div{
+    background-color: blue;
+}
+
+.container-preparo{
+    background-color:  palevioletred;
+    color: white;
+    border-radius: 8px;
+   
+}
+
+.container-preparo li{
+    font-size: 2rem;
+}
+
+#ingredientes{
+    background-color: darkkhaki;
+    color:brown;
+    border-radius: 8px;
+    
+}
+
+/* unidades de medida  */
+/* px - unidade de medida fixa */
+/* rem - unidade de medida relativa - 1rem = 16px */ 

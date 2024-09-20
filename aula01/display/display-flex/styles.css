@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: blue;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.elementos{
+    background-color: aquamarine;
+    color: black;
+    width: 4rem;
+    height: 4rem;
+
+}
