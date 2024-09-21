@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #b3c3cc;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: red;
+}
+
+.cabecalho {
+    display: flex;
+    /* background-color: blue; */
+    padding: 15px;
+    justify-content: space-between;
+
+}
+
+.top-left {
+    width: 35rem;
+    height: 6rem;
+    background-color: aqua;
+
+}
+
+.top-right {
+    width: 20rem;
+    height: 6rem;
+    background-color: white;
+
+}
+
+.main-content {
+    height: 90vh;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+.conteudo {
+    background-color: blueviolet;
+    width: 20rem;
+    height: 25rem;
+
+}
+
+.rodape{
+    height: 6rem;
+    background-color: black;
+}

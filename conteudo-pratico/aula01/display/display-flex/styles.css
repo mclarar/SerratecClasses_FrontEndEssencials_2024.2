@@ -1,3 +1,4 @@
+/* CCS reset  */
 *{
     margin: 0;
     padding: 0;
@@ -20,4 +21,10 @@
     width: 4rem;
     height: 4rem;
 
+}
+
+#div-elementos{
+    background-color:red;
+    width: 4rem;
+    height: 4rem;
 }
