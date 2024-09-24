@@ -83,3 +83,27 @@ form {
 button:hover{
     background-color: #223430;
 }   
+
+.campo-info-pessoais input[type="text"], input[type="email"]{
+    width: 35rem;
+    height: 2rem;
+    /* background-color: aqua; */
+    border: none;
+    border-radius: 8px;
+    padding-left: 10px ;
+}
+
+/* 
+1rem = 16px */
+
+@media (max-width: 620px) {
+    form{
+        width: 90%;
+    }
+
+    .titulo-pagina{
+        font-size: 7rem;
+        color: red;
+    }
+}
+
