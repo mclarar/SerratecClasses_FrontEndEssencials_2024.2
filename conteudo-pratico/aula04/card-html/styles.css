@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    height: 35rem;
+    background-color: cadetblue;
+    border-radius: 8px;
+    gap: 2rem;
+}
+
+/* 1rem = 16px */
+
+.imagem {
+    display: flex;
+    width: 100%;
+    height: 15%;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto{
+ background-color: aqua;
+ padding: 1rem;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
