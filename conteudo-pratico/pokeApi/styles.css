@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#pokemon_info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.pokemon_card {
+    display: flex;
+    flex-direction: column;
+    width: 12rem;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.pokemon_image {
+    width: 8rem;
+    height: 8rem;
+    margin: auto;
+}

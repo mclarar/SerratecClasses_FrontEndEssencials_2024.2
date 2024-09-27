@@ -1,0 +1,8 @@
+//  JSON (JavaScript Object Notation)
+//  formato de dados leve, utilizado para transmitir dados entre um servidor e o cliente side (web)
+
+{
+    "nome": "Maria",
+    "idade": 28,
+    "cidade": "Petrópolis"
+}
